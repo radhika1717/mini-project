@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mini Project</title>
+	<link rel="stylesheet" type="text/css" href="mini.css">
+</head>
+<body>
+	<script src="mini.js"></script>
+	<center>
+	<fieldset>
+		<div>
+	<form onsubmit="return validateName()" name="regform">
+		<h2>Details Form</h2><hr class="hr">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<lable>Name : </lable>&nbsp;&nbsp;
+		<input type="text" name="fname" id="name" minlength="3"><br><br>
+
+		<lable>Mob. No. :</lable>&nbsp;&nbsp;
+		<input type="tel" name="fnum" id="num" maxlength="10" minlength="10"><br><br>
+
+		<label>Email ID :</label>&nbsp;&nbsp;&nbsp;
+		<input type="email" name="fmail" id="mail"><br><br><br>
+
+
+		<button type="submit" class="btn" onclick="validateName()">SUBMIT</button><hr class="hr">
+	</form>
+</div>
+<div id="record"></div>
+</fieldset>
+</center>
+</body>
+</html>
